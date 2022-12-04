@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+  font-family: Poppins;
+    min-height: 100vh;
+    background-color: #2F303A;
+   
+}
+.indexbody{
+    display: flex;
+    flex-direction: column;
+}
+.containt{
+max-width: 95%;
+margin: 0 auto;
+padding: 0 0px 0 40px;
+
+}
+#frontbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#bar {
+top: 0;
+left:10% ;
+height: 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+#logobox > a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    font: 30px bold;
+    text-decoration: none;
+}
+#bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#bar ul li{
+    padding: 0 10px;
+    color: white;
+    font: 20px bold;
+}
+#bar ul li a{
+    color: white;
+    text-decoration: none;
+}
+#childfront{
+   display: flex;
+   justify-content: space-between;
+   align-items: stretch;
+   flex-grow: 1;
+}
+#childfront > div{
+    flex-grow: 1;
+    }
+#imgbox{
+display: flex;
+flex-direction: column;
+align-items: stretch;
+justify-content: flex-end;
+}
+#img-lady{
+    flex-grow: 1;
+    background-image: url("./img/landing-page-girl.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    max-height: 70vh;
+    min-width: 30vw;
+}
+#textbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: flex-start;
+
+}
+#textbox > h1 {
+    font-size: 3em;
+    padding: 0 0 15px;
+}
+
+#textbox > p {
+    padding: 0 0 15px;
+}
+#textbox > a {
+    text-decoration: none;
+    color: white;
+    padding: .9em;
+    background: rgb(23, 132, 168);
+    border-radius: .3em;
+}
+.cir1{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 400px;
+    background-color: #2F3446;
+    position: absolute;
+    z-index: -1;
+    top: 10vh;
+    left: 30vw;
+    
+}
+.cir2{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 400px;
+    background-color: #3D3141;
+    position: absolute;
+    z-index: -1;
+    top: 40vh;
+    left: 5vw;
+    
+}
+.cir3{
+    width: 40vw;
+    height: 40vw;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+}
+.cir3::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 400px;
+    background-color: #2F3446;
+    position: absolute;
+    bottom: -40%;
+    right: -40%;
+}
+@media only screen and (max-width:700px){
+    .containt{
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 0px 0 0px;
+        
+        }
+    #imgbox{
+        display: none;
+    }
+    .indexbody{
+    background-image: url("./img/landing-page-girl.png");
+    background-size: 40%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+   }
+    #childfront{
+        justify-content: center;
+        align-items: center;
+        /* flex-grow: 1; */
+     }
+}

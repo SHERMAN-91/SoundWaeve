@@ -1,0 +1,143 @@
+.joinbody{
+    
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+#joinbodys{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    height: 100%;
+}
+#joinbodys div{
+    flex-grow: 1;
+}
+#joinbodys #leftsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
+#joinbodys #leftsection span{
+    color :rgb(197, 67, 67)
+}
+#foot{
+    height: 60px;
+    background-color: rgb(26, 24, 24);
+    color: white;
+}
+#foot a{
+   
+    color: white;
+    text-decoration: none;
+} 
+#siteinfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.foot{ 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#soitial {
+    display: flex;
+    padding: 0 0px 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+#soitial figure{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+#soitial figure:hover svg{
+    width:27px;
+    height: 27px;
+}
+#soitial figure:first-child:hover svg path{
+    fill:#0344CD;
+}
+#soitial figure:last-child:hover svg path{
+    fill:#29A8DF;
+}
+#rightsection{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-width: 40%;
+}
+#joinform{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    align-content: flex-start;
+    height: 90%;
+border-radius: 10px;
+    background-color: rgba(0, 0, 0, .6);
+}
+#joinform label{
+display: block;
+margin: 0 auto;
+width: 90%;
+color:white;}
+
+#joinform input{
+  display: block;
+width: 100%;
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+font-size: 20px;
+}
+
+input[type="submit"]{
+    background-color: rgb(39, 152, 223);
+    color: wheat;
+    
+}
+@media only screen and (max-width:930px){
+    
+    #joinbodys{
+       
+        flex-direction: column;
+        /* width: 80%; */
+    }
+    #rightsection{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        min-width: 40%;
+    }
+    #joinform{
+        width: 80%;
+        /* display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        align-content: flex-start;
+        height: 90%;
+    border-radius: 10px;
+        background-color: rgba(0, 0, 0, .6); */
+    }
+    #joinbodys #leftsection{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        font-size: 2em;
+        color: white;
+    }
+    
+}

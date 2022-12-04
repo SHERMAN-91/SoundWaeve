@@ -1,0 +1,161 @@
+.discbody{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+}
+#bodyD{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+#bodyD > div{
+flex-grow: 1;
+/* border: 2px solid red; */
+
+}
+#textsction{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#rightsection{
+  width: 100%;
+height: 70%;
+}
+#textsction  p {
+ padding: 20px 0 ;
+}
+#imgsction{
+    min-width: 40%;
+    max-width: 70%;
+    /* height: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+#foot{
+    height: 60px;
+    background-color: rgb(26, 24, 24);
+    color: white;
+}
+#foot a{
+   
+    color: white;
+    text-decoration: none;
+} 
+#siteinfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.foot{ 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#svgicon{
+    display: flex;
+    padding: 0 0px 0 10px;
+    /* flex-direction: column; */
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+#svgicon figure{
+height:100px;
+width: 100px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+background-color: #202027;
+}
+/* figure {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+
+} */
+#svgicon figure span{
+    color: white;
+    font-size: 20px;
+} 
+/* svg{
+    background-color: #202027;
+    padding: 0px;
+} */
+#forimg{
+    width: 100%;
+    height: 70%;
+    background-image: url("./img/covers.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#soitial {
+    display: flex;
+    padding: 0 0px 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+#soitial figure{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+#soitial figure:hover svg{
+    width:27px;
+    height: 27px;
+}
+#soitial figure:first-child:hover svg path{
+    fill:#0344CD;
+}
+#soitial figure:last-child:hover svg path{
+    fill:#29A8DF;
+}
+
+#joinsection{
+    font-size: 40px;
+}
+@media only screen and (max-width:700px){
+    #bodyD{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #leftsection{
+        text-align: center;
+    }
+    #svgicon{
+        display: flex;
+        padding: 0 0px 0 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    #forimg{
+    height: 100%;
+
+    }
+    #imgsction{
+        /* min-width: 40%;
+        max-width: 70%; */
+        height: 50%;
+    }
+     
+}
